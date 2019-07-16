@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.mynotes"
+        applicationId "com.example.mynotes" //包名在此配置 独一无二
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
