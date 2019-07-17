@@ -3,3 +3,7 @@
 local.properties
 .idea
 build
+release
+
+
+#   模板修改    ...\plugins\android\lib\templates\gradle-projects\NewAndroidProject\root 下，修改 project_ignore 文件即可
