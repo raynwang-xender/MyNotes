@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
         String TAG = "onActivityResult";
+        System.out.println(TAG + "---Rayn resultCode:"+requestCode);
+        System.out.println(TAG + "---Rayn resultCode:"+resultCode);
 
         if (requestCode == 666){
             if (data == null) {
