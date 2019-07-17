@@ -1,1 +1,2 @@
-#   在全局的gitignore设置就可以了
+#   在全局的gitignore设置就可以了 这里不用管
+#   androidTest和Test可以删除 没卵用
