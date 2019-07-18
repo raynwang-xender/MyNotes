@@ -8,17 +8,27 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {   //companion是静态 也只能放全局
+        val TAG: String = MainActivity::class.java.simpleName    //::两个冒号   类名::class.java  得到类的class对象
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        Normal.var和val()
+        Normal.公共私有()
+        Normal.静态类()
+        Normal.感叹号()
+        Normal.lateinit()
 
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {   //问号表示可以为空
 
 
-        val TAG = "onActivityResult"    //val是不可变量 类似final
+        val TAG = "onActivityResult"
         println("$TAG---Rayn resultCode:$requestCode")
         println("$TAG---Rayn resultCode:$resultCode")
 
