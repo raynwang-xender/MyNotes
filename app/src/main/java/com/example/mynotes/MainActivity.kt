@@ -8,8 +8,10 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
+
     companion object {   //companion是静态 也只能放全局
         val TAG: String = MainActivity::class.java.simpleName    //::两个冒号   类名::class.java  得到类的class对象
+
     }
 
 
@@ -17,11 +19,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Normal.var和val()
-        Normal.公共私有()
-        Normal.静态类()
-        Normal.感叹号()
-        Normal.lateinit()
+        Normal_Object.var和val()
+        Normal_Object.公共私有()
+        Normal_Object.静态类()
+        Normal_Object.感叹号()
+        Normal_Object.问号()
+        Normal_Object.等号()
+        Normal_Object.lateinit()
+        Normal_Object.区间两个点for循环()
+        Normal_Object.两个冒号()
 
     }
 
