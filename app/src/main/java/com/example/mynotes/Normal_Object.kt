@@ -1,5 +1,6 @@
 package com.example.mynotes
 
+import java.util.*
 import kotlin.properties.Delegates
 
 
@@ -7,7 +8,7 @@ var toppp = "顶级变量"  //声明在类的外面 可理解为Java中的静态
 
 /** ---Rayn main函数写法一 */
 fun main() {
-    Normal_Object.两个冒号()
+    Normal_Object.艾特()
 }
 
 /**
@@ -152,16 +153,18 @@ object Normal_Object {
     }
 
 
-
-    fun fun_run(){
-        run { //run 是kotlin当中的一个函数
+    fun fun_run() {
+        run {
+            //run 是kotlin当中的一个函数
             println("lambda")
         }
-        var i: Int = run { //不给函数设置标签，标签默认为函数名 即run@ 所以下面可使用run标签
+        var i: Int = run {
+            //不给函数设置标签，标签默认为函数名 即run@ 所以下面可使用run标签
             return@run 1
         }
         println("$i")
-        i = run outer@{ //将第二个函数命为 outer
+        i = run outer@{
+            //将第二个函数命为 outer
             return@outer 2
         }
     }
@@ -176,4 +179,50 @@ object Normal_Object {
         println(TAG)    //Normal_Object
     }
 
+    fun 艾特() {
+
+        /** ---Rayn 用法1：可以直接跳出想跳的循环 */
+        loop1@ for (i in 1..10) {
+            loop2@ for (j in 1..5) {
+                if (i == 3) {
+                    break@loop1
+                }
+                println("i=$i j=$j")
+            }
+        }
+
+        /** ---Rayn 用法2：命名函数自动定义标签 */
+
+
+        /** ---Rayn 用法3：从forEach中跳出 */
+
+    }
+
+
+    /** ---Rayn 直接用arrayOf创建数组 */
+//    var array = arrayOf("aaa","bbb","ccc")
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

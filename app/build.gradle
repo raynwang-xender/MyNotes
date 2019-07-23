@@ -32,6 +32,9 @@ dependencies {
 
     //kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //有了这个直接就可以从布局文件里获取控件对象了，不需要findViewById
+    apply plugin: 'kotlin-android-extensions'
 }
 
 //kotlin
